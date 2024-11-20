@@ -1,12 +1,34 @@
-<!DOCTYPE html>
+c<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MULT 213 - Assignment 1</title>
+    <title>Pokémon Fetcher</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <h1>MULT 213 - Assignment 1</h1>
-    <p>Just a temporary page, while I set up my git repo.</p>
+    <div class="container">
+        <h1>Pokémon Fetcher</h1>
+        <form id="pokemonForm">
+            <input type="text" id="pokemonName" placeholder="Enter Pokémon name" required>
+            <button type="submit">Search</button>
+        </form>
+        <div id="pokemonContainer">
+            <div id="pokemonDisplayPrev">
+                <img id="pokemonImagePrev" src="" alt="Pokémon image" hidden>
+                <p id="pokemonInfoPrev"></p>
+            </div>
+            <div id="pokemonDisplay">
+                <img id="pokemonImage" src="" alt="Pokémon image" hidden>
+                <p id="pokemonInfo"></p>
+            </div>
+            <div id="pokemonDisplayNext">
+                <img id="pokemonImageNext" src="" alt="Pokémon image" hidden>
+                <p id="pokemonInfoNext"></p>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
 </body>
 </html>
+
